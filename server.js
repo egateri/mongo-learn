@@ -1,7 +1,5 @@
 const dotevn = require('dotenv').config();
 const express = require("express");
-const mongoose = require("mongoose");
-// initialise express
 const app = express();
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -17,5 +15,4 @@ app.use(usersRouter);
 app.use(registerRouter);
 app.use(loginRouter);
 const PORT = process.env.PORT;
-// Server listen
 app.listen(PORT, () => console.log(`Server listening to port ${PORT}`));
