@@ -1,0 +1,23 @@
+<%- include('./layout/header'); -%>
+
+
+<br><br>
+<center>This is our Login page.</center>
+    <!-- <form action="/login" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" value=""><br>
+        <label for="name">Email</label>
+        <input type="text" name="email"  value=""><br>
+        <input type="submit" value="Submit">
+    </form> -->
+    <div class="contact">
+    <form id ="myform" autocomplete="off" target="" action="/login" method="post" enctype="">
+        <input type="text" name ="name"  id = "name" placeholder ="Name..." required>
+        <input type="email" name ="email" id ="email" placeholder ="Email..." required><br/><br/>
+        <textarea  name="comment"  id ="textarea" row ="8" cols="100" form="myform" placeholder ="Your Message here..."required></textarea><br/><br/>
+        <input type="submit" value ="Submit">
+     </form>
+    </div>
+<br><br>
+
+<%- include('./layout/footer'); -%>
