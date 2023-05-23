@@ -1,0 +1,157 @@
+<%- include('layout/header') -%>
+
+<br><br>
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="field">
+        <h3 class="jQueryHeader">About The Project</h3>
+            <p><span id="beforepara">T</span>his is a <strong>Node JS</strong> Web Application Project.
+               This Project helps me demostrate the skills I acquired in Week 4 of the study.</p>
+            
+             <p>In addition to Node JS, below languages have been made use of:</p>
+               <ul class="jQueryUl">
+                 <li>Embended JavaScript</li>
+                 <li>Jquery</li>
+                 <li>Cascading Style Sheets</li>
+                 <li>Hypertext Make Up language</li>
+                 <li>NodeMon</li>
+                 <li>Bootstrap</li>
+                 <li>Node Package Manager</li>
+               </ul>
+             <p>The main skill acquired in this week is how to create routes on the webservice - creation of Middlewares and
+               setting configurations configuration .</p>
+    </div> 
+    <div class="field"> 
+      <h3 class="jQueryHeader">BDD</h3>        
+             <p><span id="beforepara">A</span>s a User, I would like;</p>
+               <ol class="jQueryUl">
+                 <li>Efficiently use the website across devices of all sizes and browsers.</li>
+                 <li>Demonstrate the effects of the jQuery.</li>
+                 <li>Dockerize the Node Application and deploy.</li>
+                 <li>Connect the application to database - MongoDb or MySQL.</li>
+               </ol>
+    </div> 
+    <div class="field"> 
+      <h3 class="jQueryHeader">Setup and Installations Instructions</h3>          
+             <p>To develop a similar web application or make improvements:</p>
+  <ul>
+    <li>Ensure you have installed <a href="https://www.google.com/chrome/">google chrome</a> browser</li>
+    <li>Ensure you have installed a code editor like Visual Studio and <a href="https://git-scm.com/download/win">git</a></li>
+    <li>
+        Create a project folder preferably from command line  <br>
+       <em> `mkdir your_project_folder`</em>
+      
+    </li>
+    <li>
+        Navigate to your project folder   <br>
+        <em> `cd your_project_folder`</em>
+        
+    </li>
+    <li>
+        Clone the Node JS Application source code into your project folder   <br> 
+        <em>`git clone https://github.com/egateri/learn-nodejs.git`</em> 
+       
+    </li>
+    <li>
+        Use the Visual Studio code editor to open, review and modify the code   <br> 
+        <em>`code .` </em>
+    </li>
+    <li>
+      Install all the project dependencies   <br> 
+      <em>`npm install` </em>
+  </li>
+    <li>Locally test the web application using the Live Server</li>
+    <li>Use the Chrome browser <strong>inspect</strong> and <strong>console</strong> functionalities to test jQuery functions, code and device responsiveness</li>
+    <li>Use <a href="https://getbootstrap.com/">Bootstrap</a> tool to help improve on the look and feel of the web application</li>
+    <li>Request to contribute and create your own branch once request is approved</li>
+    <li>Request to merge new improvements into the master branch once tested and bugs are fixed</li>
+    <li>You may also identify and suggest bugs that require fixing by raising issue on Github.</li>
+    <li>Finally host your Web Application on domain hoster or Cloud Provider of your choice! </li>
+
+</ul>
+             <p>To deploy using docker:</p>
+          <ul>
+            <li> 
+                 Build the app   <br>  
+                 <em>`docker build -t node-web-app .`</em>
+                </li>
+            <li>Run the app  <br>  
+                <em>`docker run -p 80:5500 -d node-web-app`</em>
+                </li>
+            <li>
+                Test the app  <br>   
+                <em>`curl -i localhost:80`</em>
+            </li>
+            <li>
+                Get the docker container ID  <br>  
+                <em>`docker ps -a`</em> 
+            </li>
+            <li>
+                Access the container from command line <br>  
+                <em>`docker exec -it container_id /bin/bash `</em>    
+            </li>
+          </ul>
+      
+    </div>          
+            
+            
+          </div>
+          <div class ="rightcolumn">
+            <div class="field">
+              <h3 class="jQueryHeader">Dependencies</h3>
+              <p><span id="beforepara">T</span>hese are the project dependencies;</p>
+              <ul class="jQueryUl">
+                <li>Node v18.16.0</li>
+                <li>Bootstrap v5.3.0</li>
+                <li>NPM v9.5.1 </li>
+                <li>EJS v3.1.9</li>
+                <li>Express v4.18.2</li>
+                <li>NodeMon v2.0.22 </li>
+                <li>jQuery v3.6.3 </li>
+          </div>
+
+          <div class="field">
+            <h3 class="jQueryHeader">Technologies and Languages used</h3>
+            <p><span id="beforepara">B</span>elow Technologies and programming languages have been used;</p>
+              <ul class="jQueryUl">
+                <li>Node JS - Express, Embedded JavaScript</li>
+                <li>Docker</li>
+                <li>HTML and CSS </li>
+                <li>Bootstrap</li>
+                <li>Google Chrome</li>
+                <li>Visual Studio & Live Server </li>
+            </ul>
+          </div>
+          <div class="field">
+            <h3 class="jQueryHeader">jQuery</h3>
+            <p class="jQueryPara" >Click this paragraph  to demonstrate jQuery.</p>
+            <p class="jQueryPara" style="display:none; color:red;font-size:x-large;">I am a jQuery Paragraph. Click me Again!</p>
+
+            <p>Please hover the mouse over the headers and the lists to observe jQuery effects</p>
+          </div>
+          <div class="field">
+            <h3 class="jQueryHeader">Live Link</h3>
+            <p>Project has been deployed on below Live Links:</p>
+             <a href="https://nodejs2-z5ym.onrender.com/ ">Docker App Deployment</a>
+             <br>
+             <a href="https://nodejs-twh0.onrender.com/">Node Js App Deplyment</a>
+           
+          </div>
+          <div class="field">
+            <h3 class="jQueryHeader">Contact Information</h3>
+            <ul class="jQueryUl">
+                <li>Name : Eliud Gateri</li>
+                <li>Email: egateri@gmail.com</li>
+                <li>Student: Moringa School </li>
+                <li>Phone : 0700 XXX 000</li>
+                <li>Gitbub: <a href="https://github.com/egateri">https://github.com/egateri</a></li>
+
+            </ul>
+          </div>
+          </div>
+    </div>
+
+<br><br>
+
+<%- include('layout/footer') -%>

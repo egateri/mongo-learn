@@ -1,0 +1,28 @@
+<%- include('layout/header') -%>
+
+<br /><br />
+<div class="container">
+  <h3 class="jQueryHeader">Users:</h3>
+  <div class="users">
+    <p>This is the List of Users.</p>
+    <% data.forEach(user=>{ %>
+    <ul>
+      <li class="jQueryLi">Roll No : <%= user.roll_no %></li>
+      <li class="jQueryLi">Name : <%= user.name %></li>
+      <li class="jQueryLi">Year : <%= user.year %></li>
+      <li class="jQueryLi">
+        Subjects :
+        <ol>
+          <% user.subjects.forEach(subject=>{ %>
+          <li class="jQueryLi"><%= subject %></li>
+          <% }) %>
+        </ol>
+      </li>
+    </ul>
+    <hr />
+    <% }) %>
+  </div>
+</div>
+<br /><br />
+
+<%- include('layout/footer') -%>

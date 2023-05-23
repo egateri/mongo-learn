@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+    margin: 0;
+    padding:0;
+  }
+  
+  .field li {
+    font-size: small;
+  }
+  
+  .users {
+    border: solid;
+    border-color: darkolivegreen;
+    border-radius: 10px;
+    border-width: 1pt;
+    padding: 20px;
+  }
+  .users li {
+    color: darkgreen;
+  }
+  h6,
+  p {
+    font-size: small;
+  }
+  
+  /* styles for the footer  */
+  #footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 70px 20px;
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  #footer p {
+    text-align: left;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul {
+    text-align: left;
+  }
+  
+  /* style for the form  */
+  #form {
+    width: 100%;
+    padding: 5px;
+    border: solid;
+    border-color: darkolivegreen;
+    border-radius: 10px;
+    border-width: 1pt;
+    height: 100%;
+  }
+  
+  /* font size of form text  */
+  .form-text {
+    font-size: x-small;
+    color: f2f2f2;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* font size of form label  */
+  .form-label {
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* margin of form input fields  */
+  .mb-3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* style for landing page instructions */
+  .text-list li {
+    font-style: italic;
+    color: darkgreen;
+    font-size: small;
+    text-align: left;
+  }
+  /* style for input fields */
+  .text-muted {
+    font-size: small;
+    text-align: left;
+  }
+  
+  h6 .bg-bg-light {
+    text-align: left;
+  }
+  
+  em {
+    background-color: burlywood;
+  }
+  
+  /* span style */
+  #beforepara {
+    float: left;
+    font-size: 250%;
+    padding: 0px 3px 0px 3px;
+    display: inline;
+  }
+  
+  /* Image style */
+  img {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+  
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 60%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive layout  */
+  @media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  /* Field to hold content */
+  .field {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    color: green;
+  }
+  

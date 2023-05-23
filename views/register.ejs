@@ -1,0 +1,62 @@
+<%- include('./layout/header'); -%>
+
+<br /><br />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4">
+        <h1 class="justify-content-center"t>Register Here!</h1>
+      <form
+        autocomplete="off"
+        target=""
+        action="/register"
+        method="post"
+        enctype=""
+      >
+        <div class="form-group">
+            <label for="">Roll No:</label>
+            <input
+            type="number"
+            name="roll_no"
+            class="form-control"
+            placeholder="Roll N0..."
+            required
+          />
+          </div><div class="form-group">
+            <label for="">Name:</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            id="name"
+            placeholder="Name..."
+            required
+          />
+        </div><div class="form-group">
+            <label for="" class="form-label">Year:</label>
+        <input
+          type="number"
+          name="year"
+          class="form-control"
+          placeholder="Year..."
+          required
+        />
+    </div><div class="form-group">
+        <label for="" class="form-label">Subjects:</label>
+        <input
+          name="subjects"
+          type ="text"
+          class="form-control"
+          placeholder="Subjects..."
+          required>
+        </div>
+        <br /><br />
+        <input class="btn btn-primary" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4"></div>
+  </div>
+</div>
+<br /><br />
+
+<%- include('./layout/footer'); -%>
