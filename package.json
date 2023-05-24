@@ -9,10 +9,10 @@
   "name": "mongo",
   "version": "1.0.0",
   "description": "mongo project",
-  "main": "",
+  "main": "app.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "author": "Eliud Gateri",
   "license": "MIT"

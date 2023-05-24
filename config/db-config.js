@@ -7,7 +7,6 @@ const options= {
     family: 4
 }
 const db = mongoose.connect(MONGODB_URL, options)
-    .then(() => console.log("MongoDB connected"))
+    .then(() => console.log("DB Connected successfully"))
     .catch(err => console.log(err));  
-
 module.exports = db;
