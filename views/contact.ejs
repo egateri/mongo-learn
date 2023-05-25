@@ -1,0 +1,50 @@
+<%- include('layout/header') -%>
+<br><br>
+<div class="container">
+    <h3 class="jQueryHeader">Please Contact Us:</h3>
+    <div class="row">
+        <div class="col-sm-11 col-md-11 col-lg-11">
+    
+        <form id="form" method="post" action="/contact">
+            <div class="mb-0">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                class="form-control input-sm"
+                id="inputsm"
+                type="text"
+                name="name"
+                value=""
+                placeholder=""
+                required
+              />
+              <div id="" class="form-text">Enter Your Name</div>
+            </div>
+
+
+            <div class="mb-0">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                class="form-control input-sm"
+                id="inputsm"
+                type="email"
+                name="email"
+                value=""
+                placeholder=""
+                required
+              />
+              <div id="" class="form-text">Enter Your Email</div>
+            </div>
+            <div class="mb-0">
+            <label for="password" class="form-label">Message:</label>
+            <textarea id="inputsm" class="form-control input-sm" name="comment"  row ="300" cols="100"  value ="" required></textarea>
+            <div id="" class="form-text">Share feedback:</div>   
+        </div>
+   
+            <button type="submit" class="btn btn-primary h6">Submit</button>
+          </form>
+    </div>
+    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+</div>
+</div>
+<br><br>
+<%- include('layout/footer') -%>

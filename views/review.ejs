@@ -1,0 +1,22 @@
+<%- include('layout/header') -%>
+
+<br /><br />
+<div class="container">
+  <h3 class="jQueryHeader">See Below Customer Reviews:</h3>
+  <div class="users">
+    <p>Reviews.</p>
+    <% data.forEach(review =>{ %>
+    <ul>
+      <li class="jQueryLi">Customer Name : <%= review.name %></li>
+      <li class="jQueryLi">Customer Email: <%= review.email %></li>
+      <li class="jQueryLi">Customer Review: <%= review.message %></li>
+      <li class="jQueryLi">Date: <%= review.created_at %></li>
+    </ul>
+    <hr />
+    <% }); %>
+    
+  </div>
+</div>
+<br /><br />
+
+<%- include('layout/footer') -%>
