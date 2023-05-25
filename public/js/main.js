@@ -27,3 +27,38 @@ $(document).ready(() => {
     });
   });
   
+  /* Photo delete and Update*/
+
+  $(document).ready(()=>{
+    $('.modal').modal();
+
+    $("form").submit(()=>{
+        var  name = $('input').val();
+        var id = $('form').attr('data-id');
+        $.ajax({
+            method: 'put',
+            url: '/image/'+id,
+            headers: {'Content-Type': 'application/json'},
+            data: JSON.stringify({
+                'name': name
+            }), 
+            error: (err)=>{
+                console.log(err)
+            }
+        })
+    })
+    $('#delete').on('click',()=>{
+        var id = $('#delete').attr('data-id');
+        $.ajax({
+            method: 'delete',
+            url: '/image/' + id,
+            success: (response)=>{
+                window.location.href= '/';
+            },
+            error: (err)=>{
+                console.log(err)
+            }
+        })
+
+    })
+})
