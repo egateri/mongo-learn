@@ -13,29 +13,19 @@ router.get('/:id', (req,res)=>{
         });
 
 // route to handle put request
-router.put('/:id', (req,res)=>{
+router.put('/:id', async (req,res)=>{
     
-    Photo.updateOne({_id: req.params.id}, {
-        $set: {
-            name: req.body.name
-        }
-    },{upsert:true}, (err, image)=>{
-        if (err){
-            console.log(err)
-        }else{
-            res.redirect('/')
-        }
-    })
+    await Photo.updateOne({_id: req.params.id}, {$set: {name: req.body.name}},{upsert:true} );
 
+    console.log(req.body.name);
+    res.redirect('/');
 })
 // Delete route
 router.delete('/:id', (req,res)=>{
     
-    Photo.deleteOne({_id:req.params.id}, (error)=>{
-        if (error){
-            console.log(error)
-        }
-        res.send('Success')
-    })
-})
+    Photo.deleteOne({_id:req.params.id})
+        .then(()=> res.send('Success'))
+        .catch((error)=>console.log(error));
+       
+});
 module.exports = router;
