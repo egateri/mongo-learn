@@ -39,12 +39,8 @@ $(document).ready(() => {
             method: 'put',
             url: '/image/'+id,
             headers: {'Content-Type': 'application/json'},
-            data: JSON.stringify({
-                'name': name
-            }), 
-            error: (err)=>{
-                console.log(err)
-            }
+            data: JSON.stringify({'name': name }), 
+            error: (err)=>{console.log(err)}
         })
     })
     $('#delete').on('click',()=>{
@@ -53,7 +49,7 @@ $(document).ready(() => {
             method: 'delete',
             url: '/image/' + id,
             success: (response)=>{
-                window.location.href= '/';
+                window.location.href= '/photo';
             },
             error: (err)=>{
                 console.log(err)

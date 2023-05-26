@@ -15,8 +15,8 @@ router.get('/photo', (req,res)=>{
 
 
 // route to handle image upload
-router.post('/photo', (req,res)=>{
-    upload(req, res, (err)=>{
+router.post('/photo', async (req,res)=>{
+    await upload(req, res, (err)=>{
         if (err){
             console.log(err)
             // Redirect to the index page and pass a msg to the template
