@@ -27,7 +27,8 @@ router.post("/login", (req, res) => {
     };
 
 
-  res.render("login", { title: "Login Page", isGetMethod:false, data: details });
+  // res.render("login", { title: "Login Page", isGetMethod:false, data: details });
+  res.redirect('/')
   res.end();
 });
 
