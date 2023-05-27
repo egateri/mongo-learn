@@ -22,5 +22,5 @@ app.use(loginRouter);
 app.use(contactRouter);
 app.use(reviewRouter);
 app.use(photoRouter);
-app.use('/image',imageRouter);
+app.use(imageRouter);
 app.listen(PORT, () => console.log(`Server listening to port ${PORT}`));

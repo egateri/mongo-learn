@@ -3,7 +3,7 @@ const fs = require("fs");
 const router = express.Router();
 const Photo = require("../models/photos");
 
-router.get("/:id", (req, res) => {
+router.get("/image/:id", (req, res) => {
   Photo.findById({ _id: req.params.id })
 
     .then((image) => {
@@ -15,7 +15,7 @@ router.get("/:id", (req, res) => {
 });
 
 // route to handle put request
-router.put("/:id", async (req, res) => {
+router.put("/image/:id", async (req, res) => {
   await Photo.updateOne(
     { _id: req.params.id },
     { $set: { name: req.body.name } },
@@ -27,7 +27,7 @@ router.put("/:id", async (req, res) => {
 });
 
 // Delete route
-router.delete("/:id", (req, res) => {
+router.delete("/image/:id", (req, res) => {
   Photo.findById({ _id: req.params.id })
     .then((photo) => {
       console.log("Photo :" + photo);
