@@ -53,7 +53,7 @@ router.delete("/image/:id", (req, res) => {
         Photo.deleteOne({ _id: req.params.id })
         .then(() => {
           console.log("Database record deleted successfully");
-          res.redirect(303,"/photo?msg=File deleted successfully");
+          res.redirect(303,'/photo');
         })
         .catch((error) => console.log(error));
 

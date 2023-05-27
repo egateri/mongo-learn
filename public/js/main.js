@@ -49,7 +49,7 @@ $(document).ready(() => {
             method: 'delete',
             url: '/image/' + id,
             success: (response)=>{
-                window.location.href= '/photo';
+                window.location.href= '/photo?msg=Image and Record deleted successfully';
             },
             error: (err)=>{
                 console.log(err)
