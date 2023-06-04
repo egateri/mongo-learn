@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:19
 
 LABEL AUTHOR: Eliud Gateri <egateri@gmail.com>
 
@@ -12,7 +12,7 @@ COPY package*.json ./
 
 RUN npm install
 # If you are building your code for production
- RUN npm ci --omit=dev
+#  RUN npm ci --omit=dev
 
 # Bundle app source
 COPY . .
