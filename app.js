@@ -1,6 +1,6 @@
 const express = require("express");
 const db = require('./config/db-config')
-const PORT = process.env.PORT||5500;
+const PORT = process.env.PORT||7000;
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 const registerRouter = require("./routes/register");
